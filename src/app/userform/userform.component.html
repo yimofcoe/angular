@@ -1,0 +1,305 @@
+<div class="container mt-5">
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h2>User Information</h2>
+    </div>
+    <div class="container-sm">
+      <div class="row">
+        <div class="col">
+          <img
+            [src]="bannerImage"
+            alt="Banner Image"
+            class="banner-image bg-dark img-fluid mx-5" />
+          <button
+            type="button"
+            class="btn btn-link text-center top-100 start-100 translate-middle">
+            <i class="bi bi-camera"></i>
+          </button>
+          <p>EDIT COVER PHOTO</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <div class="position-relative">
+            <img [src]="logoBase64" alt="Logo" />
+            <button
+              type="button"
+              class="btn btn-link position-absolute top-100 start-100 translate-middle">
+              <i class="bi bi-camera"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row mb-3">
+            <div class="col">
+              <label for="username" class="form-label">USERNAME</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Username" />
+            </div>
+            <div class="col">
+              <label for="nickname" class="form-label">NICKNAME</label>
+              <input
+                required
+                type="text"
+                class="form-control form-right"
+                id="nickname"
+                placeholder="Nick Name" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="firstName" class="form-label">FIRSTNAME</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="First Name" />
+            </div>
+            <div class="col">
+              <label for="lastName" class="form-label">LASTNAME</label>
+              <input
+                required
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="position" class="form-label">POSITION</label>
+              <select class="form-control" id="position">
+                <option>Please select</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="nationality" class="form-label">NATIONALITY</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nationality"
+                placeholder="Nationality" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <label for="telephone" class="form-label">TELEPHONE NUMBER</label>
+              <input
+                type="text"
+                class="form-control"
+                id="telephone"
+                placeholder="Telephone Number" />
+            </div>
+            <div class="col">
+              <label for="startDate" class="form-label">STARTING DATE</label>
+              <input type="date" class="form-control" id="startDate" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h3>CONTACT INFORMATION</h3>
+      <div class="container mb-3">
+        <div class="row mb-2">
+          <div class="col">
+            <label for="" class="form-label">ADDRESS</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="address" />
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col me-1">
+            <label> SUB DISTRICT </label>
+            <select class="form-select mt-1">
+              <option selected class="gray-200">select Sub District</option>
+              <option>ex1</option>
+            </select>
+          </div>
+          <div class="col mx-2">
+            <label>District</label>
+            <select class="form-select mt-1">
+              <option selected class="gray-200">select District</option>
+              <option>ex1</option>
+            </select>
+          </div>
+          <div class="col mx-2">
+            <label>Province</label>
+            <select class="form-select mt-1">
+              <option selected class="gray-200">select Province</option>
+              <option>ex1</option>
+            </select>
+          </div>
+          <div class="col mx-2">
+            <label>POSTAL CODE</label>
+            <select class="form-select mt-1">
+              <option selected class="gray-200">select Postal Code</option>
+              <option>ex1</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col me-1">
+            <label> FACEBOOK</label>
+            <div class="container row">
+              <input class="mt-1 form-control" type="text" />
+            </div>
+          </div>
+          <div class="col mx-1">
+            <label>LineID</label>
+            <div class="container row">
+              <input class="mt-1 form-control" type="text" />
+            </div>
+          </div>
+          <div class="col mx-2">
+            <label>POSTAL CODE</label>
+            <div class="container row">
+              <input class="mt-1 form-control" type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educational Information -->
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h3>Educational Information</h3>
+      <div class="container mb-3"></div>
+    </div>
+  </div>
+
+  <!-- Experience Information -->
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h3>EXPERIENCE INFORMATION</h3>
+    </div>
+    <div class="container mb-3">
+      <!-- Experience fields -->
+    </div>
+  </div>
+
+  <!-- Skill Information -->
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h3>SKILL INFORMATION</h3>
+    </div>
+    <div class="card-body">
+      <div class="container">
+        <form>
+          <h2>Skill Information</h2>
+          <div
+            *ngFor="let skill of skills; let i = index"
+            class="form-group row align-items-center">
+            <div class="col-sm-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Skill"
+                [(ngModel)]="skill.name"
+                name="skillName{{ i }}" />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Level"
+                [(ngModel)]="skill.level"
+                name="skillLevel{{ i }}"
+                min="1"
+                max="10" />
+            </div>
+            <div class="col-sm-5">
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  [style.width.%]="skill.level * 10"
+                  aria-valuenow="{{ skill.level }}"
+                  aria-valuemin="0"
+                  aria-valuemax="10">
+                  {{ skill.level }}
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <button
+                type="button"
+                class="btn btn-danger"
+                (click)="removeSkill(i)">
+                Remove
+              </button>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-primary mt-3"
+            (click)="addSkill()">
+            Add Skill
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interests Information -->
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h3>INTERSTED INFORMATION</h3>
+    </div>
+    <div class="card-body">
+      <div class="section">
+        <button class="add-button">ADD INTERESTS</button>
+        <div class="tags">
+          <div class="tag">SONG <span class="remove-tag">✖</span></div>
+          <div class="tag">ANIME <span class="remove-tag">✖</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guild Information -->
+  <div class="card mb-4">
+    <div class="container mt-3 mx-2">
+      <h3>Guild Information</h3>
+    </div>
+    <div class="card-body">
+      <div class="section">
+        <button class="add-button text-center">ADD GUILD</button>
+        <div class="tags text-center">
+          <div class="tag">K-POP <span class="remove-tag">✖</span></div>
+          <div class="tag">T-POP <span class="remove-tag">✖</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-grid gap-2 col-1 mx-auto mb-lg-3 mb-5">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+</div>
+
+<script>
+  const selectElement = document.querySelector('.form-select');
+  selectElement.addEventListener('input', function (event) {
+    const searchText = event.target.value.toLowerCase();
+    const options = Array.from(event.target.options);
+    options.forEach(option => {
+      const optionText = option.textContent.toLowerCase();
+      if (optionText.includes(searchText)) {
+        option.style.display = 'block';
+      } else {
+        option.style.display = 'none';
+      }
+    });
+  });
+</script>

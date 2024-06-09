@@ -1,0 +1,62 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.banner-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remove-tag {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-right {
+  margin-right: 1.5cm;
+}
