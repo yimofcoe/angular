@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-
-// MongoDB connection
 const connectDB = async () => {
   try {
     await mongoose.connect('mongodb://localhost:27017/users', {
@@ -14,7 +12,6 @@ const connectDB = async () => {
   }
 };
 
-// Define schema
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true, unique: true },
   firstname: { type: String, required: true },
